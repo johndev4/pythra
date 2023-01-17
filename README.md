@@ -109,7 +109,7 @@ Kumusta mundo!
 
 <br>
 
-## Avaliable Languages (current version: v1.0.0)
+## Available Languages
 
 | Language | Specific FileExtension |
 | -------- | ---------------------- |
