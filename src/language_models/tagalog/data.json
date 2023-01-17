@@ -3,25 +3,27 @@
     "at": "and",
     "o": "or",
 
-    "totoo": "True",
-    "mali": "False",
+    "Totoo": "True",
+    "Mali": "False",
 
-    "mula": "from",
-    "iangkat": "import",
+    "mula_sa": "from",
+    "mag_import": "import",
     
-    "kah": "def",
+    "depenisyon": "def",
+    "dep": "def",
     "klase": "class",
     "sarili": "self",
 
     "ibalik": "return",
-    "pasa": "pass",
+    "dumaan": "pass",
     "itaas": "raise",
     "ituloy": "continue",
-    "wakas": "break",
+    "itigil": "break",
 
     "kung": "if",
     "eh_paano_kung": "elif",
-    "kung_hindi": "else",
+    "eh_pano_kung": "elif",
+    "kundi": "else",
     "bawat": "for",
     "habang": "while",
 
@@ -31,19 +33,19 @@
     
     "subukan": "try",
     "maliban": "except",
-    "sawakas": "finally",
+    "sa_wakas": "finally",
 
-    "kumuha_ng_sagot": "input",
+    "mag_lagay": "input",
     "igiit": "assert",
     "isagawa": "exec",
-    "isulat": "print",
-    "kasama": "with",
-    "ani": "yield",
+    "mag_print": "print",
+    "kalakip": "with",
+    "sumuko": "yield",
 
     "numero": "int",
     "letra": "str",
     "lutang": "float",
     "baynaryo": "bin",
-    "wala": "None"    
+    "Wala": "None"    
   }
 }

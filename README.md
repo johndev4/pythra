@@ -8,7 +8,7 @@ Pythra is designed to translate python keywords in any language to their English
 
 <br>
 
-> **Note:** The program currently only supports a limited number of languages and keywords, and may not accurately translate all input. It is recommended to double check the translation with a reliable source before using in production code. The program also supports the translation of single line comment and multi line comment in any language to english python's comment.
+> **Note:** The program currently only supports a limited number of languages and keywords, and may not accurately translate all input. It is recommended to double check the translation with a reliable source before using in production code.
 
 <br>
 
@@ -87,8 +87,8 @@ Filename: _\_\_pythraconfig\_\_.json_
 Filename: _kumusta_mundo.ptg_
 
 ```python
-kah kumustaMundo():
-	isulat("Kumusta mundo!")
+dep kumustaMundo():
+	mag_print("Kumusta mundo!")
 
 kumustaMundo()
 ```
@@ -109,7 +109,7 @@ Kumusta mundo!
 
 <br>
 
-## Available Languages
+## Supported Languages
 
 | Language | Specific File Extension |
 | -------- | ----------------------- |

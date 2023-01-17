@@ -1,10 +1,10 @@
-iangkat kaha.kumusta
-mula kaha.tao iangkat Tao
+mag_import kaha.kondisyon
+mula_sa kaha.tao mag_import Tao
 
-kah simula():
-    kaha.kumusta.isulatAngKumustaMundo()
-
+dep simula():
+    kaha.kondisyon.magPrintNgPangalan('Juan')
+    
     tao = Tao("Juan", 23)
-    isulat(tao.kuninAngTao())
+    mag_print(tao.kuninAngTao())
 
 simula()

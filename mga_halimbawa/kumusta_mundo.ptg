@@ -1,4 +1,4 @@
-kah kumustaMundo():
-	isulat("Kumusta mundo!")
+dep kumustaMundo():
+	mag_print("Kumusta mundo!")
 	
 kumustaMundo()
