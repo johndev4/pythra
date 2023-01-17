@@ -73,6 +73,8 @@ proyekto/
 			modulo.puta
 ```
 
+<br>
+
 Filename: _\_\_pythraconfig\_\_.json_
 
 ```json
@@ -83,6 +85,8 @@ Filename: _\_\_pythraconfig\_\_.json_
   "runOnCompile": "true"
 }
 ```
+
+<br>
 
 Filename: _kumusta_mundo.ptg_
 
@@ -99,7 +103,7 @@ CLI
 pythra kumusta_mundo.ptg
 ```
 
-<small>Output:</small>
+Output:
 
 ```
 Kumusta mundo!
