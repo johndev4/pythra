@@ -1,0 +1,7 @@
+klase Tao:
+    kah __init__(sarili, pangalan, edad):
+        sarili.pangalan = pangalan
+        sarili.edad = edad
+    
+    kah kuninAngTao(sarili):
+        ibalik f"Pangalan: {sarili.pangalan}\nEdad: {sarili.edad}"

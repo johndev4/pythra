@@ -1,0 +1,49 @@
+{
+  "keywords": {
+    "at": "and",
+    "o": "or",
+
+    "totoo": "True",
+    "mali": "False",
+
+    "mula": "from",
+    "iangkat": "import",
+    
+    "kah": "def",
+    "klase": "class",
+    "sarili": "self",
+
+    "ibalik": "return",
+    "pasa": "pass",
+    "itaas": "raise",
+    "ituloy": "continue",
+    "wakas": "break",
+
+    "kung": "if",
+    "eh_paano_kung": "elif",
+    "kung_hindi": "else",
+    "bawat": "for",
+    "habang": "while",
+
+    "sa": "in",
+    "bilang": "as",
+    "is": "ay",
+    
+    "subukan": "try",
+    "maliban": "except",
+    "sawakas": "finally",
+
+    "kumuha_ng_sagot": "input",
+    "igiit": "assert",
+    "isagawa": "exec",
+    "isulat": "print",
+    "kasama": "with",
+    "ani": "yield",
+
+    "numero": "int",
+    "letra": "str",
+    "lutang": "float",
+    "baynaryo": "bin",
+    "wala": "None"    
+  }
+}

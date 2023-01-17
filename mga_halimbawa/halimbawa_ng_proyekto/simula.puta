@@ -1,0 +1,10 @@
+iangkat kaha.kumusta
+mula kaha.tao iangkat Tao
+
+kah simula():
+    kaha.kumusta.isulatAngKumustaMundo()
+
+    tao = Tao("Juan", 23)
+    isulat(tao.kuninAngTao())
+
+simula()

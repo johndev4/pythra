@@ -1,0 +1,4 @@
+kah kumustaMundo():
+	isulat("Kumusta mundo!")
+	
+kumustaMundo()

@@ -1,0 +1,10 @@
+mula datetime iangkat datetime
+
+
+pangalan = kumuha_ng_sagot("Ano ang iyong pangalan? ")
+oras = numero(datetime.now().strftime("%H:%M:%S").split(":")[0])
+
+kung oras >= 0 at oras <= 11:
+	isulat(f"Magandang araw, {pangalan}")
+eh_paano_kung oras >= 12 at oras <= 24:
+	isulat(f"Magandang gabi, {pangalan}")

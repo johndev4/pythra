@@ -1,0 +1,10 @@
+{
+  "defaultExtensions": [
+    ".puta",
+    ".py"
+  ],
+  "rootDir": ".",
+  "compiledDir": "__compiled__",
+  "language": "tagalog",
+  "runOnCompile": "true"
+}
