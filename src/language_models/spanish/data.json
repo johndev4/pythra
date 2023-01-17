@@ -1,0 +1,50 @@
+{
+    "keywords": {
+      "y": "and",
+      "o": "or",
+  
+      "Cierto": "True",
+      "Falso": "False",
+  
+      "desde": "from",
+      "importar": "import",
+      
+      "definición": "def",
+      "def": "def",
+      "clase": "class",
+      "mi": "self",
+  
+      "vuelta": "return",
+      "pase": "pass",
+      "levanto": "raise",
+      "continúo": "continue",
+      "rompo": "break",
+  
+      "si": "if",
+      "más si": "elif",
+      "más": "else",
+      "para": "for",
+      "mientras": "while",
+  
+      "en": "in",
+      "como": "as",
+      "es": "ay",
+      
+      "intento": "try",
+      "excepto": "except",
+      "finalmente": "finally",
+  
+      "entro": "input",
+      "afirmo": "assert",
+      "ejecuto": "exec",
+      "imprimo": "print",
+      "con": "with",
+      "cedo": "yield",
+  
+      "número": "int",
+      "letra": "str",
+      "floto": "float",
+      "binario": "bin",
+      "Ninguno": "None"    
+    }
+  }

@@ -114,6 +114,7 @@ Kumusta mundo!
 | Language | Specific File Extension |
 | -------- | ----------------------- |
 | Tagalog  | _.ptg_                  |
+| Spanish  | _.pes_                  |
 
 ---
 
