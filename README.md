@@ -111,9 +111,9 @@ Kumusta mundo!
 
 ## Available Languages
 
-| Language | Specific FileExtension |
-| -------- | ---------------------- |
-| Tagalog  | _.ptg_                 |
+| Language | Specific File Extension |
+| -------- | ----------------------- |
+| Tagalog  | _.ptg_                  |
 
 ---
 
