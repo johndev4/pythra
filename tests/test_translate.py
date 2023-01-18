@@ -10,17 +10,26 @@ def __translate(code: str):
     tokens = []
     current_token = ""
     quotations = {"\"", "\'"}
-    brackets = {"{", "}"}
+    curly_brackets = {"{", "}"}
     inside_quotations = False
-    inside_brackets = False
+    inside_curly_brackets = False
+    period_on = False
+
     for character in code:
         if character in splitters:
             if character in quotations:
                 inside_quotations = not inside_quotations
-            elif character in brackets:
-                inside_brackets = not inside_brackets
-            elif current_token in keywords and (inside_quotations == False or inside_brackets == True):
-                current_token = keywords[current_token]
+            elif character in curly_brackets:
+                inside_curly_brackets = not inside_curly_brackets
+            elif character == ".":
+                if current_token in keywords and (inside_quotations == False or inside_curly_brackets == True):
+                    current_token = keywords[current_token]
+                period_on = True
+            elif current_token in keywords and (inside_quotations == False or inside_curly_brackets == True):
+                if period_on == False:
+                    current_token = keywords[current_token]
+                else:
+                    period_on = False
 
             tokens.append(current_token)
             tokens.append(character)
@@ -35,6 +44,27 @@ def __translate(code: str):
 
     return translated_code
 
+
+# Test Case:
+code = "mula_sa kaha.mag_print mag_import kumustaMundo"
+expected_output = "from kaha.mag_print import kumustaMundo"
+print(f'Output: {__translate(code)}\n\n')
+assert __translate(code) == expected_output
+
+code = "sarili.mag_print()"
+expected_output = "self.mag_print()"
+print(f'Output: {__translate(code)}\n\n')
+assert __translate(code) == expected_output
+
+code = "f'{sarili.x}'"
+expected_output = "f'{self.x}'"
+print(f'Output: {__translate(code)}\n\n')
+assert __translate(code) == expected_output
+
+code = "{sarili.x}"
+expected_output = "{self.x}"
+print(f'Output: {__translate(code)}\n\n')
+assert __translate(code) == expected_output
 
 # Test Case 1:
 code = "dep suma(numero x, numero y): ibalik x + y"

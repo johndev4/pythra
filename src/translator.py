@@ -12,17 +12,26 @@ class Translator:
         tokens = []
         current_token = ""
         quotations = {"\"", "\'"}
-        brackets = {"{", "}"}
+        curly_brackets = {"{", "}"}
         inside_quotations = False
-        inside_brackets = False
+        inside_curly_brackets = False
+        period_on = False
+
         for character in code:
             if character in splitters:
                 if character in quotations:
                     inside_quotations = not inside_quotations
-                elif character in brackets:
-                    inside_brackets = not inside_brackets
-                elif current_token in keywords and (inside_quotations == False or inside_brackets == True):
-                    current_token = keywords[current_token]
+                elif character in curly_brackets:
+                    inside_curly_brackets = not inside_curly_brackets
+                elif character == ".":
+                    if current_token in keywords and (inside_quotations == False or inside_curly_brackets == True):
+                        current_token = keywords[current_token]
+                    period_on = True
+                elif current_token in keywords and (inside_quotations == False or inside_curly_brackets == True):
+                    if period_on == False:
+                        current_token = keywords[current_token]
+                    else:
+                        period_on = False
 
                 tokens.append(current_token)
                 tokens.append(character)
