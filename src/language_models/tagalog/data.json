@@ -44,6 +44,7 @@
 
     "numero": "int",
     "letra": "str",
+    "karakter": "chr",
     "lutang": "float",
     "baynaryo": "bin",
     "Wala": "None"    

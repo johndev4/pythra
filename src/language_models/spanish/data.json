@@ -43,6 +43,7 @@
   
       "número": "int",
       "letra": "str",
+      "carácter": "chr",
       "floto": "float",
       "binario": "bin",
       "Ninguno": "None"    
