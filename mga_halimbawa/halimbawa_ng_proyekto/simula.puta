@@ -1,10 +1,19 @@
-mag_import kaha.kondisyon
+mag_import kaha.kagamitan
 mula_sa kaha.tao mag_import Tao
 
 dep simula():
-    kaha.kondisyon.magPrintNgPangalan('Juan')
+    subukan:
+        pangalan = mag_lagay("Ano ang iyong pangalan? ")
+        edad = numero(mag_lagay("Ano ang iyong edad? "))
+
+        mag_print('\n')
+        kaha.kagamitan.batiin(pangalan)
+        
+        tao = Tao(pangalan, edad)
+        mag_print(f"\nDetalye ng tao:\n{tao.kuninAngTao()}")
     
-    tao = Tao("Juan", 23)
-    mag_print(tao.kuninAngTao())
+    maliban:
+        mag_print("Error: May mali sa code!")
+
 
 simula()

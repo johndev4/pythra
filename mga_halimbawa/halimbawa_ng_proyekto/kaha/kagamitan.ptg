@@ -1,0 +1,12 @@
+mula_sa datetime mag_import datetime
+
+
+dep batiin(pangalan: letra) -> Wala:
+	oras = numero(datetime.now().strftime("%H:%M:%S").split(":")[0])
+
+	kung oras >= 0 at oras <= 11:
+		mag_print(f"Magandang araw, {pangalan}")
+	eh_paano_kung oras >= 12 at oras <= 24:
+		mag_print(f"Magandang gabi, {pangalan}")
+	kundi:
+		mag_print("Hindi wasto ang oras!")

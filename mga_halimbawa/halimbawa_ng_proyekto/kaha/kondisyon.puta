@@ -1,7 +1,0 @@
-dep magPrintNgPangalan(pangalan: letra):
-    kung pangalan == 'Juan':
-        mag_print('Kumusta Juan!')
-    eh_paano_kung pangalan == 'Juanito':
-        mag_print('Hola Juanito!')
-    kundi:
-        mag_print(f'Hello {pangalan}!')
