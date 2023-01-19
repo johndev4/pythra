@@ -92,3 +92,11 @@ class AppUtil:
         splitted_file_path = file.split("\\")
         splitted_file_path.reverse()
         return os.path.splitext(splitted_file_path[0])
+    
+    def get_supported_languages(self) -> set:
+        lang_models = os.path.join(self.__appdir, "language_models")
+        subdirs = os.listdir(lang_models)
+        if (subdirs):
+            return set(subdirs)
+        else:
+            return set()

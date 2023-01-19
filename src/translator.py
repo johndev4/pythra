@@ -3,12 +3,12 @@ from language import Language
 
 class Translator:
 
-    def __init__(self):
-        self.language = Language()
+    def __init__(self, language: Language):
+        self.__language = language
 
     def translate(self, code: str):
-        splitters = set(self.language.get("splitters"))
-        keywords = self.language.get("keywords")
+        splitters = set(self.__language.get_dict("splitters"))
+        keywords = self.__language.get_dict("keywords")
         tokens = []
         current_token = ""
         quotations = {"\"", "\'"}

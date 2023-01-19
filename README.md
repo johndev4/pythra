@@ -45,6 +45,7 @@ pythra [OPTIONS] [FILE_PATH]
 | Options              | Description                                                                      |
 | -------------------- | -------------------------------------------------------------------------------- |
 | --version, -v        | Display the current version of pythra.                                           |
+| --language, -l       | Override the foreign language.                                                   |
 | --install-completion | Install completion for the current shell.                                        |
 | --show-completion    | Show completion for the current shell, to copy it or customize the installation. |
 | --help               | Show this message and exit.                                                      |
