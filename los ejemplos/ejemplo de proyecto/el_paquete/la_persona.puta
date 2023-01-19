@@ -1,0 +1,7 @@
+clase LaPersona:
+    def __init__(mi, nombre, años):
+        mi.nombre = nombre
+        mi.años = años
+    
+    def obténPersona(mi):
+        vuelta f"Nombre: {mi.nombre}\nAños: {mi.años}"

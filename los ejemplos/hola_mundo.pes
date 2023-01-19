@@ -1,0 +1,4 @@
+def holaMundo():
+	imprimo("Hola, mundo!")
+	
+holaMundo()

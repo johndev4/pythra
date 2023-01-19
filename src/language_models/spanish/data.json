@@ -7,7 +7,7 @@
       "Falso": "False",
   
       "desde": "from",
-      "importar": "import",
+      "importo": "import",
       
       "definición": "def",
       "def": "def",
@@ -21,7 +21,7 @@
       "rompo": "break",
   
       "si": "if",
-      "más si": "elif",
+      "más_si": "elif",
       "más": "else",
       "para": "for",
       "mientras": "while",
