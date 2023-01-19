@@ -78,7 +78,7 @@ myproject/
 
 Filename: _\_\_pythraconfig\_\_.json_
 
-> The default foreign language of Pythra is *Tagalog*. If you did not put *\_\_pythraconfig\_\_.json* in your project, Pythra will compile your script in *Tagalog*.
+> The default foreign language of Pythra is _Tagalog_. If you did not put _\_\_pythraconfig\_\_.json_ in your project, Pythra will compile your script in _Tagalog_.
 
 ```json
 {
@@ -91,7 +91,7 @@ Filename: _\_\_pythraconfig\_\_.json_
 
 ---
 
-__TAGALOG:__
+**TAGALOG:**
 
 Filename: _kumusta_mundo.ptg_
 
@@ -116,7 +116,7 @@ Kumusta mundo!
 
 <br>
 
-__SPANISH:__
+**SPANISH:**
 
 Filename: _hola_mundo.pes_
 
@@ -142,8 +142,6 @@ Hola, mundo!
 ---
 
 <br>
-
-
 
 ## Supported Languages
 
