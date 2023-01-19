@@ -1,0 +1,19 @@
+importo el_paquete.la_herramienta
+desde el_paquete.la_persona importo LaPersona
+
+def comenzar():
+    intento:
+        nombre = entro("¿Cuál es tu nombre? ")
+        años = número(entro("¿Cuántos años tienes? "))
+
+        imprimo('\n')
+        el_paquete.la_herramienta.saluda(nombre)
+        
+        laPersona = LaPersona(nombre, años)
+        imprimo(f"\nDatos de la persona:\n{laPersona.obténPersona()}")
+    
+    excepto:
+        imprimo("Error: Hay un error en el código!")
+
+
+comenzar()

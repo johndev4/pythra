@@ -56,27 +56,29 @@ pythra [OPTIONS] [FILE_PATH]
 
 Project structure
 
-> It is optional to have *\_\_pythraconfig\_\_.json* to compile and run the pythra file, but it is recommended to have it in your directory to organize your pythra project.
+> It is optional to have *\_\_pythraconfig\_\_.json* to compile and run the Pythra file, but it is recommended to have it in your directory to organize your Pythra project.
 
 ```
-proyekto/
+myproject/
     README.md
-    LISYENSYA.md
-    proyekto/
+    LICENSE.md
+    myproject/
 		__pythraconfig__.json
-		modulo.puta
-		kaha_1/
-			kaha/
-				modulo.puta
-			modulo_1.puta
-			modulo_2.puta
-		kaha_2/
-			modulo.puta
+		module.puta
+		package_1/
+			package/
+				module.puta
+			module_1.puta
+			module_2.puta
+		package_2/
+			module.puta
 ```
 
 <br>
 
 Filename: _\_\_pythraconfig\_\_.json_
+
+> The default foreign language of Pythra is *Tagalog*. If you did not put *\_\_pythraconfig\_\_.json* in your project, Pythra will compile your script in *Tagalog*.
 
 ```json
 {
@@ -87,7 +89,9 @@ Filename: _\_\_pythraconfig\_\_.json_
 }
 ```
 
-<br>
+---
+
+__TAGALOG:__
 
 Filename: _kumusta_mundo.ptg_
 
@@ -110,9 +114,36 @@ Output:
 Kumusta mundo!
 ```
 
+<br>
+
+__SPANISH:__
+
+Filename: _hola_mundo.pes_
+
+```python
+def holaMundo():
+	imprimo("Hola, mundo!")
+
+holaMundo()
+```
+
+CLI
+
+```bash
+pythra _hola_mundo.pes
+```
+
+Output:
+
+```
+Hola, mundo!
+```
+
 ---
 
 <br>
+
+
 
 ## Supported Languages
 

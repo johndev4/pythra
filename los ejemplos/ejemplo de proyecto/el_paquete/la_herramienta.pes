@@ -1,0 +1,12 @@
+desde datetime importo datetime
+
+
+def saluda(nombre: letra) -> Ninguno:
+	la_hora = número(datetime.now().strftime("%H:%M:%S").split(":")[0])
+
+	si la_hora >= 0 y la_hora <= 11:
+		imprimo(f"Buenos días, {nombre}")
+	más_si la_hora >= 12 y la_hora <= 24:
+		imprimo(f"Buenas noches, {nombre}")
+	más:
+		imprimo("La hora no es correcta!")
