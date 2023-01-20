@@ -1,7 +1,7 @@
 mula_sa datetime mag_import datetime
 
 
-dep batiin(pangalan: letra) -> Wala:
+dep batiin(pangalan: teksto) -> Wala:
 	oras = numero(datetime.now().strftime("%H:%M:%S").split(":")[0])
 
 	kung oras >= 0 at oras <= 11:

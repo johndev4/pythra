@@ -145,10 +145,10 @@ Hola, mundo!
 
 ## Supported Languages
 
-| Language | Specific File Extension |
-| -------- | ----------------------- |
-| Tagalog  | _.ptg_                  |
-| Spanish  | _.pes_                  |
+| Language | Specific File Extension |                                             |
+| -------- | ----------------------- | ------------------------------------------- |
+| Tagalog  | _.ptg_                  | [Documentation](./documentation/tagalog.md) |
+| Spanish  | _.pes_                  |                                             |
 
 ---
 
