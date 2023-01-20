@@ -1,38 +1,53 @@
 {
     "keywords": {
-      "y": "and",
-      "o": "or",
-  
-      "Cierto": "True",
-      "Falso": "False",
-  
+      "texto": "str",
+
+      "número": "int",
+      "floto": "float",
+      "complejo": "complex",
+
+      "alcance": "range",
+      "lista": "list",
+      "tupla": "tuple",
+
+      "diccionario": "dict",
+
+      "conjunto": "set",
+      "conjunto_congelado": "frozenset",
+      
+      "booleano": "bool",
+
+      "bytes": "bytes",
+      "bytesarray": "bytesarray",
+      "vista_de_memoria": "memoryview",
+      
+      "Ninguno": "None",
+
       "desde": "from",
       "importo": "import",
-      
-      "definición": "def",
-      "def": "def",
-      "clase": "class",
-      "mi": "self",
-  
-      "vuelta": "return",
-      "pase": "pass",
-      "levanto": "raise",
-      "continúo": "continue",
-      "rompo": "break",
   
       "si": "if",
       "más_si": "elif",
       "más": "else",
+
       "para": "for",
       "mientras": "while",
-  
-      "en": "in",
-      "como": "as",
-      "es": "ay",
       
       "intento": "try",
       "excepto": "except",
       "finalmente": "finally",
+
+      "y": "and",
+      "o": "or",
+      "no": "not",
+  
+      "Cierto": "True",
+      "Falso": "False",
+
+      "definición": "def",
+      "def": "def",
+      "clase": "class",
+      "mi": "self",
   
       "entro": "input",
       "afirmo": "assert",
@@ -40,12 +55,15 @@
       "imprimo": "print",
       "con": "with",
       "cedo": "yield",
-  
-      "número": "int",
-      "letra": "str",
-      "carácter": "chr",
-      "floto": "float",
-      "binario": "bin",
-      "Ninguno": "None"    
+
+      "vuelta": "return",
+      "pase": "pass",
+      "levanto": "raise",
+      "continúo": "continue",
+      "rompo": "break",
+
+      "en": "in",
+      "como": "as",
+      "es": "is"
     }
   }

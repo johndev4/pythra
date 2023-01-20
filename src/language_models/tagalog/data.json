@@ -1,39 +1,53 @@
 {
   "keywords": {
+    "teksto": "str",
+
+    "numero": "int",
+    "lutang": "float",
+    "komplikado": "complex",
+
+    "saklaw": "range",
+    "lista": "list",
+    "tupla": "tuple",
+
+    "diksyunaryo": "dict",
+
+    "kumpol": "set",
+    "nakapirming_kumpol": "frozenset",
+
+    "bool": "bool",
+
+    "bytes": "bytes",
+    "bytesarray": "bytesarray",
+    "memoryview": "memoryview",
+
+    "Wala": "None",
+
+    "mula_sa": "from",
+    "mag_import": "import",
+
+    "kung": "if",
+    "eh_paano_kung": "elif",
+    "kundi": "else",
+
+    "bawat": "for",
+    "habang": "while",
+    
+    "subukan": "try",
+    "maliban": "except",
+    "sa_wakas": "finally",    
+
     "at": "and",
     "o": "or",
+    "hindi": "not",
 
     "Totoo": "True",
     "Mali": "False",
 
-    "mula_sa": "from",
-    "mag_import": "import",
-    
     "depenisyon": "def",
     "dep": "def",
     "klase": "class",
     "sarili": "self",
-
-    "ibalik": "return",
-    "dumaan": "pass",
-    "itaas": "raise",
-    "ituloy": "continue",
-    "itigil": "break",
-
-    "kung": "if",
-    "eh_paano_kung": "elif",
-    "eh_pano_kung": "elif",
-    "kundi": "else",
-    "bawat": "for",
-    "habang": "while",
-
-    "sa": "in",
-    "bilang": "as",
-    "is": "ay",
-    
-    "subukan": "try",
-    "maliban": "except",
-    "sa_wakas": "finally",
 
     "mag_lagay": "input",
     "igiit": "assert",
@@ -42,11 +56,14 @@
     "kalakip": "with",
     "sumuko": "yield",
 
-    "numero": "int",
-    "letra": "str",
-    "karakter": "chr",
-    "lutang": "float",
-    "baynaryo": "bin",
-    "Wala": "None"    
+    "ibalik": "return",
+    "dumaan": "pass",
+    "itaas": "raise",
+    "ituloy": "continue",
+    "itigil": "break",
+
+    "sa": "in",
+    "bilang": "as",
+    "ay": "is"
   }
 }
