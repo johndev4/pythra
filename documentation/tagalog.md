@@ -10,8 +10,6 @@ _Text Type:_
 | --------------- | -------------------------- |
 | teksto          | str                        |
 
-<br>
-
 _Numeric Types:_
 
 | Tagalog Keyword | English Equivalent Keyword |
@@ -19,8 +17,6 @@ _Numeric Types:_
 | numero          | int                        |
 | lutang          | float                      |
 | kompleks        | complex                    |
-
-<br>
 
 _Sequence Types:_
 
@@ -30,15 +26,11 @@ _Sequence Types:_
 | lista           | list                       |
 | tupla           | tuple                      |
 
-<br>
-
 _Mapping Type:_
 
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | diksyunaryo     | dict                       |
-
-<br>
 
 _Set Types:_
 
@@ -47,15 +39,11 @@ _Set Types:_
 | kumpol             | set                        |
 | nakapirming_kumpol | frozenset                  |
 
-<br>
-
 _Boolean Type:_
 
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | bool            | bool                       |
-
-<br>
 
 _Binary Types:_
 
@@ -65,17 +53,11 @@ _Binary Types:_
 | bytesarray      | bytesarray                 |
 | memoryview      | memoryview                 |
 
-<br>
-
 _None Type:_
 
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | Wala            | None                       |
-
-<br>
-
----
 
 ## Imports Keywords
 
@@ -83,10 +65,6 @@ _None Type:_
 | --------------- | -------------------------- |
 | mula_sa         | from                       |
 | mag_import      | import                     |
-
-<br>
-
----
 
 ## Conditional Keywords
 
@@ -96,10 +74,6 @@ _None Type:_
 | eh_paano_kung   | elif                       |
 | kundi           | else                       |
 
-<br>
-
----
-
 ## Loop Keywords
 
 | Tagalog Keyword | English Equivalent Keyword |
@@ -107,21 +81,13 @@ _None Type:_
 | bawat           | for                        |
 | habang          | while                      |
 
-<br>
-
----
-
-## Try.. Except
+## Try.. Except Keywords
 
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | subukan         | try                        |
 | maliban         | except                     |
 | sa_wakas        | finally                    |
-
-<br>
-
----
 
 ## Logical Operators
 
@@ -131,20 +97,12 @@ _None Type:_
 | o               | or                         |
 | hindi           | not                        |
 
-<br>
-
----
-
 ## Boolean Values
 
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | Totoo           | True                       |
 | Mali            | False                      |
-
-<br>
-
----
 
 ## Other Keywords
 
@@ -155,8 +113,6 @@ _None Type:_
 | klase           | class                      |
 | sarili          | self                       |
 
-<br>
-
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | mag_lagay       | input                      |
@@ -166,8 +122,6 @@ _None Type:_
 | kalakip         | with                       |
 | sumuko          | yield                      |
 
-<br>
-
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | ibalik          | return                     |
@@ -176,10 +130,69 @@ _None Type:_
 | ituloy          | continue                   |
 | itigil          | break                      |
 
-<br>
-
 | Tagalog Keyword | English Equivalent Keyword |
 | --------------- | -------------------------- |
 | sa              | in                         |
 | bilang          | as                         |
 | ay              | is                         |
+
+---
+
+## Examples
+
+Create a file `kumusta_mundo.ptg` with the following tagalog script.
+
+> You can use _.puta_, or _.py_ for the file extension.
+
+```python
+dep kumustaMundo():
+	mag_print("Kumusta mundo!")
+
+kumustaMundo()
+```
+
+Run the file in CLI using the command:
+
+```bash
+pythra kumusta_mundo.ptg
+```
+
+**_Output:_**
+
+```
+Kumusta mundo!
+```
+
+### Conditional Example:
+
+```python
+# note: pwedeng gumamit ng mag_lagay() at i-assign sa oras para kunin ang input ng user
+oras = "Umaga"
+
+kung oras == "Umaga":
+    mag_print("Magandang umaga sa inyo!") # Magandang umaga sa inyo!
+eh_paano_kung oras == "Tanghali":
+    mag_print("Magandang tanghali sa inyo!") # Magandang tanghali sa inyo!
+eh_paano_kung oras == "Gabi":
+    mag_print("Magandang gabi sa inyo!") # Magandang gabi sa inyo!
+kundi:
+    mag_print("Mali ang oras na inilagay.") # Mali ang oras na inilagay.
+```
+
+### Boolean Expression:
+
+```python
+ay_totoo = Totoo # True
+ay_mali = Mali # False
+```
+
+### Try... and Exception
+
+```python
+subukan:
+    num_1 = mag_lagay("Enter a number: ")
+    num_3 = num_1 + num_2
+
+maliban Exception bilang e:
+    mag_print(f'Eto ang error: {e}')
+```
