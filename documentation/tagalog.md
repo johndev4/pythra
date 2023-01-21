@@ -195,4 +195,6 @@ subukan:
 
 maliban Exception bilang e:
     mag_print(f'Eto ang error: {e}')
+sa_wakas:
+    mag_print('tagumpay!')
 ```

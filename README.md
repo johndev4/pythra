@@ -76,9 +76,7 @@ myproject/
 
 <br>
 
-Filename: _\_\_pythraconfig\_\_.json_
-
-> The default foreign language of Pythra is _Tagalog_. If you did not put _\_\_pythraconfig\_\_.json_ in your project, Pythra will compile your script in _Tagalog_.
+The default foreign language of Pythra is _Tagalog_. If you did not put a Pythra configuration in your project, Pythra will compile your script in _Tagalog_. These are the following properties of `__pythraconfig__.json` and its default value:
 
 ```json
 {
@@ -93,7 +91,7 @@ Filename: _\_\_pythraconfig\_\_.json_
 
 **TAGALOG:**
 
-Filename: _kumusta_mundo.ptg_
+Create a file `kumusta_mundo.ptg` with the following tagalog script.
 
 ```python
 dep kumustaMundo():
@@ -102,13 +100,13 @@ dep kumustaMundo():
 kumustaMundo()
 ```
 
-CLI
+Run the file in CLI using the command:
 
 ```bash
 pythra kumusta_mundo.ptg
 ```
 
-Output:
+**_Output:_**
 
 ```
 Kumusta mundo!
@@ -118,7 +116,7 @@ Kumusta mundo!
 
 **SPANISH:**
 
-Filename: _hola_mundo.pes_
+Create a file `hola_mundo.pes` with the following spanish script
 
 ```python
 def holaMundo():
@@ -127,13 +125,13 @@ def holaMundo():
 holaMundo()
 ```
 
-CLI
+Run the file in CLI using the command:
 
 ```bash
-pythra _hola_mundo.pes
+pythra -l spanish hola_mundo.pes
 ```
 
-Output:
+**_Output:_**
 
 ```
 Hola, mundo!
@@ -148,7 +146,7 @@ Hola, mundo!
 | Language | Specific File Extension |                                             |
 | -------- | ----------------------- | ------------------------------------------- |
 | Tagalog  | _.ptg_                  | [Documentation](./documentation/tagalog.md) |
-| Spanish  | _.pes_                  |                                             |
+| Spanish  | _.pes_                  | [Documentaion](./documentation/spanish.md)  |
 
 ---
 
