@@ -11,7 +11,6 @@ class Language:
         app_dir = self.__util.get_app_dir()
         self.__lang_dir = os.path.join(app_dir, "language_models")
         self.__const_dir = os.path.join(app_dir, "constants")
-
         lang = lang_name if lang_name is not None else self.__get_lang_from_config()
         self.__build_language(lang)
 

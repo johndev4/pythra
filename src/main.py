@@ -1,3 +1,5 @@
+import json
+import os
 from compiler import Compiler
 from language import Language
 import typer
@@ -21,7 +23,23 @@ def pythra(
         display_version()
     else:
         try:
-            if lang_name is not None and lang_name != "":
+            # Check if file extension exists in language mapping
+            lang_provided_by_ext = None
+            if file_path is not None:
+                _, file_ext = __util.split_filename(file=file_path)
+                app_dir = __util.get_app_dir()
+                const_dir = os.path.join(app_dir, "constants")
+
+                with open(os.path.join(const_dir, "language-extension-mapping.json"), "r") as f_lang_ext_mapping:
+                    lang_ext_mapping = json.load(f_lang_ext_mapping)
+                    for lang in lang_ext_mapping:
+                        if lang_ext_mapping[lang] == file_ext:
+                            # If exists, get the language name
+                            lang_provided_by_ext = lang
+
+            if lang_provided_by_ext is not None:
+                __compiler = Compiler(language=Language(lang_provided_by_ext))
+            elif lang_name is not None and lang_name != "":
                 __compiler = Compiler(language=Language(lang_name))
             else:
                 __compiler = Compiler(language=Language())

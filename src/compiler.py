@@ -11,15 +11,12 @@ class Compiler:
         self.__util = AppUtil()
         self.__language = language
         self.__translator = Translator(language=self.__language)
-
         self.__pythra_config = self.__util.get_pythra_config()
         self.__root_dir = self.__pythra_config['root_dir']
         self.__compiled_dir = f"{self.__root_dir}\\{self.__pythra_config['compiled_dir']}"
         self.__current_dir = self.__util.get_current_dir()
-
         splitted_root_dir = str(self.__root_dir).split('\\')
         self.__root_name = splitted_root_dir[-1]
-
         lang_ext = self.__language.get_lang_ext()
         self.__file_extensions = set(
             [*self.__pythra_config['default_extensions'], lang_ext])

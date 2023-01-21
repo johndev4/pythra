@@ -36,9 +36,9 @@ To use the Pythra, simply run the pythra or python script using the `pythra` key
 pythra [OPTIONS] [FILE_PATH]
 ```
 
-| Arguments | Description               | Default |
-| --------- | ------------------------- | ------- |
-| file_path | File path of pythra file. | None    |
+| Arguments | Description               | Default | Optional |
+| --------- | ------------------------- | ------- | -------- |
+| file_path | File path of pythra file. | None    | Yes      |
 
 <br>
 
@@ -87,7 +87,7 @@ The default foreign language of Pythra is _Tagalog_. If you did not put a Pythra
 }
 ```
 
----
+<br>
 
 **TAGALOG:**
 
@@ -116,7 +116,7 @@ Kumusta mundo!
 
 **SPANISH:**
 
-Create a file `hola_mundo.pes` with the following spanish script
+Create a file `hola_mundo.puta` with the following spanish script
 
 ```python
 def holaMundo():
@@ -128,13 +128,23 @@ holaMundo()
 Run the file in CLI using the command:
 
 ```bash
-pythra -l spanish hola_mundo.pes
+pythra -l spanish hola_mundo.puta
 ```
 
 **_Output:_**
 
 ```
 Hola, mundo!
+```
+
+<br>
+
+### Pythra without argument
+
+It will just compile all the files under the current directory if you execute the `pythra` keyword without the argument or the _"runOnCompile"_ property of the `__pythraconfig__.json` is set to false. By default _"runOnCompile"_ is set to true.
+
+```bash
+pythra
 ```
 
 ---
