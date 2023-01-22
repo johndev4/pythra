@@ -80,12 +80,12 @@ myproject/
 
 The default foreign language of Pythra is _Tagalog_. If you did not put a Pythra configuration in your project, Pythra will compile your script in _Tagalog_. These are the following properties of `__pythraconfig__.json` and its default value:
 
-```json
+```jsonc
 {
-  "rootDir": ".",
-  "compiledDir": "__compiled__",
-  "language": "tagalog",
-  "runOnCompile": "true"
+  "rootDir": ".",                  // The directory where the compiler starts to find the pythra script.
+  "compiledDir": "__compiled__",   // The directory where the compiled python script stored.
+  "language": "tagalog",           // Foreign language of pythra script.
+  "runOnCompile": "true"           // If true, pythra will execute the translated python script.
 }
 ```
 
