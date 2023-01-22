@@ -1,67 +1,68 @@
 {
   "keywords": {
+    // Data Types: Text type
     "teksto": "str",
-
+    // Data Types: Numeric Types
     "numero": "int",
     "lutang": "float",
     "komplikado": "complex",
-
+    // Data Types: Sequence Types
     "saklaw": "range",
     "lista": "list",
     "tupla": "tuple",
-
+    // Data Types: Mapping Type
     "diksyunaryo": "dict",
-
+    // Data Types: Set Types
     "kumpol": "set",
     "nakapirming_kumpol": "frozenset",
-
+    // Data Types: Boolean Type
     "bool": "bool",
-
+    // Data Types: Binary Types
     "bytes": "bytes",
     "bytesarray": "bytesarray",
     "memoryview": "memoryview",
-
+    // Data Types: None Type
     "Wala": "None",
-
+    // Import Keywords
     "mula_sa": "from",
     "mag_import": "import",
-
+    // Conditional Keywords
     "kung": "if",
     "eh_paano_kung": "elif",
     "kundi": "else",
-
+    // Loop Keywords
     "bawat": "for",
     "habang": "while",
-    
+    // Try.. Except.. Finally
     "subukan": "try",
     "maliban": "except",
-    "sa_wakas": "finally",    
-
+    "sa_wakas": "finally",
+    // Boolean Operators
     "at": "and",
     "o": "or",
     "hindi": "not",
-
+    // Boolean Values
     "Totoo": "True",
     "Mali": "False",
-
+    // Other Keywords
     "depenisyon": "def",
     "dep": "def",
     "klase": "class",
     "sarili": "self",
-
+    //
     "mag_lagay": "input",
     "igiit": "assert",
     "isagawa": "exec",
     "mag_print": "print",
     "kalakip": "with",
     "sumuko": "yield",
-
+    //
     "ibalik": "return",
     "dumaan": "pass",
     "itaas": "raise",
     "ituloy": "continue",
     "itigil": "break",
-
+    //
     "sa": "in",
     "bilang": "as",
     "ay": "is"
