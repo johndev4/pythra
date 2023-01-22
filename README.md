@@ -12,9 +12,10 @@ Pythra is designed to translate python keywords in any language to their English
 
 <br>
 
-### Prerequisites:
+### Requirements:
 
 - Install [Python 3.10](https://www.python.org/) which includes [Pip](https://pypi.org/project/pip/)
+- Its only dependency is [Typer 0.7.0](https://typer.tiangolo.com/)
 
 <br>
 
@@ -23,7 +24,7 @@ Pythra is designed to translate python keywords in any language to their English
 - Change directory to the source code, then run this in your CLI:
 
 ```
-pip install --editable .
+$ pip install --editable .
 ```
 
 <br>
@@ -33,7 +34,7 @@ pip install --editable .
 To use the Pythra, simply run the pythra or python script using the `pythra` keyword. The program will then translate scripts' keywords into Python's English equivalent and compile them as Python files inside the compiled directory. If no provided file argument, Pythra will only compile the scripts without executing any script. You can use either _".puta"_, _".py"_ or specific language extension to run your script.
 
 ```bash
-pythra [OPTIONS] [FILE_PATH]
+$ pythra [OPTIONS] [FILE_PATH]
 ```
 
 | Arguments | Description               | Default | Optional |
@@ -46,6 +47,7 @@ pythra [OPTIONS] [FILE_PATH]
 | -------------------- | -------------------------------------------------------------------------------- |
 | --version, -v        | Display the current version of pythra.                                           |
 | --language, -l       | Override the foreign language.                                                   |
+| --no-run             | Force not to run the script.                                                     |
 | --install-completion | Install completion for the current shell.                                        |
 | --show-completion    | Show completion for the current shell, to copy it or customize the installation. |
 | --help               | Show this message and exit.                                                      |
@@ -103,13 +105,9 @@ kumustaMundo()
 Run the file in CLI using the command:
 
 ```bash
-pythra kumusta_mundo.ptg
-```
+$ pythra kumusta_mundo.ptg
 
-**_Output:_**
-
-```
-Kumusta mundo!
+# Output: Kumusta mundo!
 ```
 
 <br>
@@ -128,13 +126,9 @@ holaMundo()
 Run the file in CLI using the command:
 
 ```bash
-pythra -l spanish hola_mundo.puta
-```
+$ pythra -l spanish hola_mundo.puta
 
-**_Output:_**
-
-```
-Hola, mundo!
+# Output: Hola, mundo!
 ```
 
 <br>
@@ -144,7 +138,7 @@ Hola, mundo!
 It will just compile all the files under the current directory if you execute the `pythra` keyword without the argument or the _"runOnCompile"_ property of the `__pythraconfig__.json` is set to false. By default _"runOnCompile"_ is set to true.
 
 ```bash
-pythra
+$ pythra
 ```
 
 ---

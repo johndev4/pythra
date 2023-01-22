@@ -154,13 +154,9 @@ holaMundo()
 Run the file in CLI using the command:
 
 ```bash
-pythra hola_mundo.pes
-```
+$ pythra hola_mundo.pes
 
-**_Output:_**
-
-```
-Hola, mundo!
+# Output: Hola, mundo!
 ```
 
 ### Conditional Example:

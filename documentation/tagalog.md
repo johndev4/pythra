@@ -154,13 +154,9 @@ kumustaMundo()
 Run the file in CLI using the command:
 
 ```bash
-pythra kumusta_mundo.ptg
-```
+$ pythra kumusta_mundo.ptg
 
-**_Output:_**
-
-```
-Kumusta mundo!
+# Output: Kumusta mundo!
 ```
 
 ### Conditional Example:
