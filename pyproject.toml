@@ -1,6 +1,6 @@
 [project]
 name = "pythra"
-version = "0.1.0"
+version = "0.2.0-beta.1"
 authors = [
   { name="johndev4", email="mail@johndev4.com" },
 ]

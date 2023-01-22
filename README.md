@@ -21,10 +21,10 @@ Pythra is designed to translate python keywords in any language to their English
 
 ### Installation using pyproject.toml:
 
-- Change directory to the source code, then run this in your CLI:
+Change directory to the source code, then run this in your CLI:
 
 ```
-$ pip install --editable .
+$ pip install .
 ```
 
 <br>
