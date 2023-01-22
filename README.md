@@ -63,9 +63,9 @@ Project structure
 ```
 myproject/
     README.md
-    LICENSE.md
+    LICENSE.txt
     myproject/
-		__pythraconfig__.json
+		__pythraconfig__.jsonc
 		module.puta
 		package_1/
 			package/
@@ -78,14 +78,14 @@ myproject/
 
 <br>
 
-The default foreign language of Pythra is _Tagalog_. If you did not put a Pythra configuration in your project, Pythra will compile your script in _Tagalog_. These are the following properties of `__pythraconfig__.json` and its default value:
+The default foreign language of Pythra is _Tagalog_. If you did not put a Pythra configuration in your project, Pythra will compile your script in _Tagalog_. These are the following properties of `__pythraconfig__.jsonc` and its default value:
 
-```json
+```jsonc
 {
-  "rootDir": ".",
-  "compiledDir": "__compiled__",
-  "language": "tagalog",
-  "runOnCompile": "true"
+  "rootDir": ".", // The directory where the compiler starts to find the pythra script.
+  "compiledDir": "__compiled__", // The directory where the compiled python script stored.
+  "language": "spanish", // Foreign language of pythra script.
+  "runOnCompile": "true" // If true, pythra will execute the translated python script.
 }
 ```
 
@@ -135,7 +135,7 @@ $ pythra -l spanish hola_mundo.puta
 
 ### Pythra without argument
 
-It will just compile all the files under the current directory if you execute the `pythra` keyword without the argument or the _"runOnCompile"_ property of the `__pythraconfig__.json` is set to false. By default _"runOnCompile"_ is set to true.
+It will just compile all the files under the current directory if you execute the `pythra` keyword without the argument or the _"runOnCompile"_ property of the `__pythraconfig__.jsonc` is set to false. By default _"runOnCompile"_ is set to true.
 
 ```bash
 $ pythra

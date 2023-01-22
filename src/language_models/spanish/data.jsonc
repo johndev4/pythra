@@ -1,0 +1,70 @@
+{
+  "keywords": {
+    // Data Types: Text type
+    "texto": "str",
+    // Data Types: Numeric Types
+    "número": "int",
+    "floto": "float",
+    "complejo": "complex",
+    // Data Types: Sequence Types
+    "alcance": "range",
+    "lista": "list",
+    "tupla": "tuple",
+    // Data Types: Mapping Type
+    "diccionario": "dict",
+    // Data Types: Set Types
+    "conjunto": "set",
+    "conjunto_congelado": "frozenset",
+    // Data Types: Boolean Type
+    "booleano": "bool",
+    // Data Types: Binary Types
+    "bytes": "bytes",
+    "bytesarray": "bytesarray",
+    "vista_de_memoria": "memoryview",
+    // Data Types: None Type
+    "Ninguno": "None",
+    // Import Keywords
+    "desde": "from",
+    "importo": "import",
+    // Conditional Keywords
+    "si": "if",
+    "más_si": "elif",
+    "más": "else",
+    // Loop Keywords
+    "para": "for",
+    "mientras": "while",
+    // Try.. Except.. Finally
+    "intento": "try",
+    "excepto": "except",
+    "finalmente": "finally",
+    // Boolean Operators
+    "y": "and",
+    "o": "or",
+    "no": "not",
+    // Boolean Values
+    "Cierto": "True",
+    "Falso": "False",
+    // Other Keywords
+    "definición": "def",
+    "def": "def",
+    "clase": "class",
+    "mi": "self",
+    //
+    "entro": "input",
+    "afirmo": "assert",
+    "ejecuto": "exec",
+    "imprimo": "print",
+    "con": "with",
+    "cedo": "yield",
+    //
+    "vuelta": "return",
+    "pase": "pass",
+    "levanto": "raise",
+    "continúo": "continue",
+    "rompo": "break",
+    //
+    "en": "in",
+    "como": "as",
+    "es": "is"
+  }
+}

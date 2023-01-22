@@ -1,0 +1,6 @@
+{
+  "rootDir": ".",                   // The directory where the compiler starts to find the pythra script.
+  "compiledDir": "__compiled__",    // The directory where the compiled python script stored.
+  "language": "spanish",            // Foreign language of pythra script.
+  "runOnCompile": "true"            // If true, pythra will execute the translated python script.
+}
