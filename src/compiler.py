@@ -21,14 +21,16 @@ class Compiler:
         self.__file_extensions = set(
             [*self.__pythra_config['default_extensions'], lang_ext])
 
-    def compile(self, file_path: str):
+    def compile(self, file_path: str, **options):
+        no_run = options.get('no_run', False)
+        
         if file_path is not None:
             # Build the packages and run the provided file
             filename, file_ext = self.__util.split_filename(file_path)
 
             if file_ext in self.__file_extensions:
                 to_run_python_path = self.build_packages()
-                if bool(self.__pythra_config["run_on_compile"]) is True:
+                if bool(self.__pythra_config["run_on_compile"]) is True and no_run == False:
                     to_run_python_file = os.path.join(
                         to_run_python_path, f"{filename}{file_ext}").replace(f"{file_ext}", ".py")
                     subprocess.run(["python", f"{to_run_python_file}"])

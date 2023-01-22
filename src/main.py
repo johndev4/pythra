@@ -17,7 +17,9 @@ def pythra(
     version: bool = typer.Option(
         False, "-v", "--version", help="Display the current version of pythra."),
     lang_name: str = typer.Option(
-        "", "-l", "--language", help="Override the foreign language.")
+        "", "-l", "--language", help="Override the foreign language."),
+    no_run: bool = typer.Option(
+        False, "--no-run", help="Force not to run the script.")
 ):
     if version is True:
         display_version()
@@ -44,7 +46,7 @@ def pythra(
             else:
                 __compiler = Compiler(language=Language())
 
-            __compiler.compile(file_path)
+            __compiler.compile(file_path, no_run=no_run)
 
         except Exception as e:
             typer.echo(f'\nError: {e}\n\n')
