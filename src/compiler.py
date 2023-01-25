@@ -1,9 +1,9 @@
 import os
 import shutil
 import subprocess
-from language import Language
-from translator import Translator
-from util import AppUtil
+from src.language import Language
+from src.translator import Translator
+from src.util import AppUtil
 
 
 class Compiler:

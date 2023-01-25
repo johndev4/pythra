@@ -19,12 +19,26 @@ Pythra is designed to translate python keywords in any language to their English
 
 <br>
 
-### Installation using pyproject.toml:
+### Installation using local distribution package:
 
-Change directory to the source code, then run this in your CLI:
+Install wheel using pip.
+
+```bash
+$ pip install wheel
+```
+
+> You can skip installation of wheel if you already have one.
+
+In the terminal, navigate to the root of your project directory and run the following command to create a distribution package:
+
+```bash
+$ python setup.py sdist bdist_wheel
+```
+
+Then you can install it with pip.
 
 ```
-$ pip install .
+$ pip install dist/pythra-0.2.1.tar.gz
 ```
 
 <br>

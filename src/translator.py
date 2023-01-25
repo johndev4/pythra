@@ -1,4 +1,4 @@
-from language import Language
+from src.language import Language
 
 
 class Translator:

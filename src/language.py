@@ -1,5 +1,5 @@
 import os
-from util import AppUtil
+from src.util import AppUtil
 
 
 class Language:

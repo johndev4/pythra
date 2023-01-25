@@ -1,9 +1,9 @@
 import json
 import os
-from compiler import Compiler
-from language import Language
 import typer
-from util import AppUtil
+from src.compiler import Compiler
+from src.language import Language
+from src.util import AppUtil
 # from rich import print
 
 
@@ -14,12 +14,9 @@ __util = AppUtil()
 @app.command(help="Interpret and compile all none english python file then execute the main file or given file.")
 def pythra(
     file_path: str = typer.Argument(None, help="File path of pythra file."),
-    version: bool = typer.Option(
-        False, "-v", "--version", help="Display the current version of pythra."),
-    lang_name: str = typer.Option(
-        "", "-l", "--language", help="Override the foreign language."),
-    no_run: bool = typer.Option(
-        False, "--no-run", help="Force not to run the script.")
+    version: bool = typer.Option(False, "-v", "--version", help="Display the current version of pythra."),
+    lang_name: str = typer.Option("", "-l", "--language", help="Override the foreign language."),
+    no_run: bool = typer.Option(False, "--no-run", help="Force not to run the script.")
 ):
     if version is True:
         display_version()
@@ -60,7 +57,7 @@ def display_version():
     typer.echo(f"Pythra v{version}")
 
 
-def initApp():
+def init_app():
     app()
 
 
