@@ -133,7 +133,9 @@ $ pythra -l spanish hola_mundo.puta
 # Output: Hola, mundo!
 ```
 
-### Pythra without argument
+For more examples, [see the examples folder](./examples).
+
+## Pythra without argument
 
 It will just compile all the files under the current directory if you execute the `pythra` keyword without the argument or the _"runOnCompile"_ property of the `__pythraconfig__.jsonc` is set to false. By default _"runOnCompile"_ is set to true.
 
@@ -143,7 +145,7 @@ $ pythra
 
 ## Supported Languages
 
-| Language | Specific File Extension |                                             |
-| -------- | ----------------------- | ------------------------------------------- |
-| Tagalog  | _.ptg_                  | [Documentation](./documentation/tagalog.md) |
-| Spanish  | _.pes_                  | [Documentaion](./documentation/spanish.md)  |
+| Language | Specific File Extension |                                    |
+| -------- | ----------------------- | ---------------------------------- |
+| Tagalog  | _.ptg_                  | [Documentation](./docs/tagalog.md) |
+| Spanish  | _.pes_                  | [Documentaion](./docs/spanish.md)  |
