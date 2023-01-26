@@ -1,33 +1,21 @@
 # Pythra - Multi-language Python Translator
 
-## Introduction:
-
 Pythra is designed to translate python keywords in any language to their English equivalent. This can be useful for programmers who are learning a new language or are working with code written in a different language. The program uses a dictionary of keywords and their translations, and will output the English equivalent of any python keyword inputted.
 
----
+> **NOTE:**<br>The program currently only supports a limited number of languages and keywords, and may not accurately translate all input. It is recommended to double check the translation with a reliable source before using in production code.
 
-<br>
-
-> **Note:** The program currently only supports a limited number of languages and keywords, and may not accurately translate all input. It is recommended to double check the translation with a reliable source before using in production code.
-
-<br>
-
-### Requirements:
+## Requirements
 
 - Install [Python 3.10](https://www.python.org/) which includes [Pip](https://pypi.org/project/pip/)
 - Its only dependency is [Typer 0.7.0](https://typer.tiangolo.com/)
 
-<br>
-
-### Installation using local distribution package:
+## Installation using local distribution package
 
 Install wheel using pip.
 
 ```bash
 $ pip install wheel
 ```
-
-> You can skip installation of wheel if you already have one.
 
 In the terminal, navigate to the root of your project directory and run the following command to create a distribution package:
 
@@ -41,15 +29,15 @@ Then you can install it with pip.
 $ pip install dist/pythra-0.2.1.tar.gz
 ```
 
-<br>
-
-### Usage:
+## Usage
 
 To use the Pythra, simply run the pythra or python script using the `pythra` keyword. The program will then translate scripts' keywords into Python's English equivalent and compile them as Python files inside the compiled directory. If no provided file argument, Pythra will only compile the scripts without executing any script. You can use either _".puta"_, _".py"_ or specific language extension to run your script.
 
 ```bash
 $ pythra [OPTIONS] [FILE_PATH]
 ```
+
+<br>
 
 | Arguments | Description               | Default | Optional |
 | --------- | ------------------------- | ------- | -------- |
@@ -66,13 +54,11 @@ $ pythra [OPTIONS] [FILE_PATH]
 | --show-completion    | Show completion for the current shell, to copy it or customize the installation. |
 | --help               | Show this message and exit.                                                      |
 
-<br>
-
-### Example:
+## Examples
 
 Project structure
 
-> It is optional to have *\_\_pythraconfig\_\_.json* to compile and run the Pythra file, but it is recommended to have it in your directory to organize your Pythra project.
+It is optional to have *\_\_pythraconfig\_\_.json* to compile and run the Pythra file, but it is recommended to have it in your directory to organize your Pythra project.
 
 ```
 myproject/
@@ -91,6 +77,8 @@ myproject/
 ```
 
 <br>
+
+Pythra Configuration
 
 The default foreign language of Pythra is _Tagalog_. If you did not put a Pythra configuration in your project, Pythra will compile your script in _Tagalog_. These are the following properties of `__pythraconfig__.jsonc` and its default value:
 
@@ -145,8 +133,6 @@ $ pythra -l spanish hola_mundo.puta
 # Output: Hola, mundo!
 ```
 
-<br>
-
 ### Pythra without argument
 
 It will just compile all the files under the current directory if you execute the `pythra` keyword without the argument or the _"runOnCompile"_ property of the `__pythraconfig__.jsonc` is set to false. By default _"runOnCompile"_ is set to true.
@@ -155,21 +141,9 @@ It will just compile all the files under the current directory if you execute th
 $ pythra
 ```
 
----
-
-<br>
-
 ## Supported Languages
 
 | Language | Specific File Extension |                                             |
 | -------- | ----------------------- | ------------------------------------------- |
 | Tagalog  | _.ptg_                  | [Documentation](./documentation/tagalog.md) |
 | Spanish  | _.pes_                  | [Documentaion](./documentation/spanish.md)  |
-
----
-
-<br>
-
-## Conclusion:
-
-This program provides a quick and easy way for programmers to translate python keywords in different languages to their English equivalent. It can save time and effort when working with code written in a foreign language. However, it should be used with caution and double-checked with a reliable source before being used in production code.
